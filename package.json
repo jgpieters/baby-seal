@@ -26,7 +26,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "react-scripts build && node server/index.js"
+    "server": "npm build && node server/index.js",
+    "docker:build": "docker build -t baby-seal -f Dockerfile .",
+    "docker:run": "docker run --name baby-seal-container -it -p 80:8080 baby-seal"
   },
   "eslintConfig": {
     "extends": [
