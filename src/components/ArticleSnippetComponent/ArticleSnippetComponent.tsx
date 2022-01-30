@@ -16,7 +16,7 @@ const ArticleSnippetComponent = ({ data }: Props) => (
         <Paragraph>{data.text}</Paragraph>
       </Col>
       <Col sm="12" md={{ span: 4 }}>
-        <img src={data.image} />
+        <img src={data.image} alt="" />
       </Col>
     </Row>
   </Container>

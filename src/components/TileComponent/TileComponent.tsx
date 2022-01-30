@@ -1,8 +1,7 @@
 import React from "react";
-import { propTypes } from "react-bootstrap/esm/Image";
 import styled from "styled-components";
 
-const Tile: any = styled.div`
+const TileContainer: any = styled.div`
   background-color: white;
   border: 1px #eee solid;
   width: 100%;
@@ -45,14 +44,14 @@ const Text: any = styled.p``;
 const Date: any = styled.p``;
 
 const TileComponent = ({ data }: Props) => (
-  <Tile data-testid="tile-component">
+  <TileContainer data-testid="tile-component">
     <Image src={data.image}></Image>
     <TextWrapper>
       <Title>{data.title}</Title>
       <Text>{data.text}</Text>
       <Date>{data.date}</Date>
     </TextWrapper>
-  </Tile>
+  </TileContainer>
 );
 
 export default TileComponent;
