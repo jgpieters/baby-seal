@@ -8,7 +8,6 @@ import IntroCompontent from "./components/IntroComponent/IntroComponent";
 import VideoSnippetComponent from "./components/VideoSnippetComponent/VideoSnippetComponent";
 import ArticleSnippetComponent from "./components/ArticleSnippetComponent/ArticleSnippetComponent";
 import TilesComponent from "./components/TilesComponent/TilesComponent";
-import { isTrivialHref } from "@restart/ui/esm/Anchor";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
 import SectionComponent from "./components/SectionComponent/SectionComponent";
 import ArticleComponent from "./components/ArticleComponent/ArticleComponent";

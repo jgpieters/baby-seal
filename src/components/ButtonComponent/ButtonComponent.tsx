@@ -9,8 +9,8 @@ const ButtonComponent = ({ data, type }: Props) => (
   <Button
     className={classNames({
       btn: true,
-      "btn-primary": type == "primary",
-      "btn-outline-primary": type == "secondary",
+      "btn-primary": type === "primary",
+      "btn-outline-primary": type === "secondary",
     })}
     href={data.href}
     target={data.target}

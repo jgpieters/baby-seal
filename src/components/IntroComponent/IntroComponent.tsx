@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import { ButtonData } from "../ButtonComponent/ButtonComponent";
-
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -23,8 +22,6 @@ const Title: any = styled.h1`
   text-transform: uppercase;
 `;
 const Paragraph: any = styled.p``;
-const PrimaryButton: any = styled.a``;
-const SecondaryButton: any = styled.a``;
 
 const IntroCompontent = ({ data }: Props) => (
   <StyledContainer data-testid="IntroCompontent">
