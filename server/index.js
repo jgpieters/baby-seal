@@ -4,11 +4,19 @@ const app = express();
 
 const port = process.env.PORT || 8080;
 
-app.use(express.static(path.join(__dirname, "..", "build")));
+let clientPath = path.join(__dirname, "..", "build");
+
+if (process.env.NODE_ENV == "production") {
+  clientPath = path.join(__dirname, "..");
+}
+console.log("clientPath: " + clientPath);
+console.log("process.env: " + process.env.NODE_ENV);
+
+app.use(express.static(path.join(clientPath)));
 
 app.get("/", (req, res) => {
   console.log("express route to serve webiste");
-  res.sendFile(path.join(__dirname, "..", "build", "index.html"));
+  res.sendFile(path.join(clientPath, "index.html"));
 });
 
 app.get("/test", (req, res) => {
