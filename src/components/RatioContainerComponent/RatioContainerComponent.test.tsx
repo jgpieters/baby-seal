@@ -9,7 +9,7 @@ describe("<RatioDiv />", () => {
       <RatioContainerComponent ratio="100%">test</RatioContainerComponent>
     );
 
-    const ratioDiv = screen.getByTestId("RatioDiv");
+    const ratioDiv = screen.getByTestId("RatioContainerComponent");
 
     expect(ratioDiv).toBeInTheDocument();
   });

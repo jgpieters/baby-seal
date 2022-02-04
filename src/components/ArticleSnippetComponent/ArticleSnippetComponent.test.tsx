@@ -7,7 +7,7 @@ describe("<ArticleSnippet />", () => {
   test("it should mount", () => {
     render(<ArticleSnippetComponent data={{} as any} />);
 
-    const articleSnippet = screen.getByTestId("ArticleSnippet");
+    const articleSnippet = screen.getByTestId("ArticleSnippetComponent");
 
     expect(articleSnippet).toBeInTheDocument();
   });
