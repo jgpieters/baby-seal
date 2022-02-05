@@ -16,6 +16,7 @@ const ButtonComponent = ({ data, type }: Props) => (
     target={data.target}
     title={data.title}
     role="button"
+    data-testid="ButtonComponent"
   >
     {data.text}
   </Button>

@@ -29,8 +29,8 @@ const FooterComponent = ({ data }: Props) => (
       <Row data-testid="ArticleSnippetComponent">
         <Col xs="12" md="6" lg="4">
           <Title>Menu</Title>
-          {data.links.map((link) => (
-            <LinkContainer>
+          {data.links?.map((link, index) => (
+            <LinkContainer key={index}>
               <LinkComponent data={link}></LinkComponent>
             </LinkContainer>
           ))}
