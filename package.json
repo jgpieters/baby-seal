@@ -29,7 +29,7 @@
     "eject": "react-scripts eject",
     "server:dev": "npm build && node server/index.js",
     "server:build": "webpack --config webpack.server.config.js",
-    "server": "node build/server/index.js",
+    "server:prod": "node build/server/index.js",
     "docker:build": "docker build -t baby-seal -f Dockerfile .",
     "docker:run": "docker run --name baby-seal-container -it -p 80:8080 baby-seal"
   },
