@@ -10,11 +10,11 @@ const BackgroundContainer: any = styled.div`
 `;
 
 const ArticleComponent = ({ color, children }: Props) => (
-  <section>
+  <article>
     <BackgroundContainer color={color} data-testid="ArticleComponent">
       {children}
     </BackgroundContainer>
-  </section>
+  </article>
 );
 
 export default ArticleComponent;
