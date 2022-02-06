@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-
+import { Link } from "react-router-dom";
 const NavBarComponent = () => (
   <Navbar bg="light" expand="lg">
     <Container>
@@ -10,10 +10,10 @@ const NavBarComponent = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/video">Video</Nav.Link>
-          <Nav.Link href="/blog">Blog</Nav.Link>
-          <Nav.Link href="/contact">Contact</Nav.Link>
-          <Nav.Link href="/donate">Help us!</Nav.Link>
+          <Link to="vlog">Vlog</Link>
+          <Link to="blog">Blog</Link>
+          <Link to="contact">Contact</Link>
+          <Link to="donate">Help ons</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
