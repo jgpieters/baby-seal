@@ -5,6 +5,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
+enum View {
+  IMAGE_LEFT = "image-left",
+  IMAGE_RIGHT = "image-right",
+}
+
 const Title: any = styled.h1``;
 const Paragraph: any = styled.p`
   white-space: pre-wrap;
@@ -43,9 +48,4 @@ interface SnippetData {
 interface Props {
   data: SnippetData;
   view?: View;
-}
-
-enum View {
-  IMAGE_LEFT = "image-left",
-  IMAGE_RIGHT = "image-right",
 }
