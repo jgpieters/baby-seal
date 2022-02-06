@@ -12,6 +12,7 @@ import RatioContainerComponent from "../RatioContainerComponent/RatioContainerCo
 
 const Title: any = styled.h1``;
 const Paragraph: any = styled.p``;
+const Date: any = styled.div``;
 
 const VideoSnippetComponent = ({ data }: Props) => (
   <Container>
@@ -25,6 +26,7 @@ const VideoSnippetComponent = ({ data }: Props) => (
             type="primary"
           ></ButtonComponent>
         ) : null}
+        {data.date ? <Date>{data.date}</Date> : null}
         {data.secondaryButton ? (
           <ButtonComponent
             data={data.secondaryButton}
@@ -46,6 +48,7 @@ export default VideoSnippetComponent;
 interface VideoSnippetData {
   title: string;
   text: string;
+  date?: Date;
   video: string;
   primaryButton?: ButtonData;
   secondaryButton?: ButtonData;
