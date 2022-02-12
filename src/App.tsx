@@ -5,13 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import NavBarComponent from "./components/NavBarComponent/NavBarComponent";
 import LandingPage from "./pages/LandingPage/LandingPage";
-import BlogPage from "./pages/BlogPage/BlogPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
-import VlogPage from "./pages/VlogPage/VlogPage.lazy";
+import VlogPage from "./pages/VlogPage/VlogPage";
 import DonatePage from "./pages/DonatePage/DonatePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import AdminPage from "./pages/adminPage/AdminPage";
+import BlogOverviewComponent from "./features/BlogFeature/components/BlogOverviewComponent/BlogOverviewComponent";
+import BlogArticleComponent from "./features/BlogFeature/components/BlogArticleComponent/BlogArticleComponent";
 
 const App = () => {
   return (
@@ -20,10 +22,13 @@ const App = () => {
         <NavBarComponent></NavBarComponent>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog" element={<BlogOverviewComponent />} />
+          <Route path="/blog/:id/*" element={<BlogArticleComponent />} />
+          <Route path="/vlog" element={<VlogPage />} />
           <Route path="/vlog" element={<VlogPage />} />
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
         <FooterComponent
           data={{

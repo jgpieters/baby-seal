@@ -14,6 +14,7 @@ const NavBarComponent = () => (
           <Link to="blog">Blog</Link>
           <Link to="contact">Contact</Link>
           <Link to="donate">Help ons</Link>
+          <Link to="admin">Admin</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

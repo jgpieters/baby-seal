@@ -1,15 +1,9 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-
+import { Blog } from "../../model/model";
+import { textEllipsis } from "../../utils/helper/TextHelper";
 interface BlogTileComponentProps {
-  data: BlogTile;
-}
-
-export interface BlogTile {
-  title: string;
-  text: string;
-  image: string;
-  date: string;
+  data: Blog;
 }
 
 const BlogTileContainer: any = styled.div`
@@ -68,14 +62,14 @@ const Date: any = styled.div`
 `;
 
 const BlogTileComponent: FC<BlogTileComponentProps> = (props) => {
-  const { data } = props;
+  const { title, text, date } = props.data;
   return (
     <BlogTileContainer data-testid="BlogTileComponent">
       <Image src={props.data.image}></Image>
       <TextWrapper>
-        <Title>{data.title}</Title>
-        <Text>{data.text}</Text>
-        <Date>{data.date}</Date>
+        <Title>{title}</Title>
+        <Text>{textEllipsis(text, 200)}</Text>
+        <Date>{date}</Date>
       </TextWrapper>
     </BlogTileContainer>
   );
