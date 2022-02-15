@@ -1,33 +1,23 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./FullScreenImageComponent.module.scss";
 import Container from "react-bootstrap/Container";
 
-const BackgroundImage: any = styled.div`
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  overflow: auto;
+type FullScreenImageComponentProps = {
+  image: string;
+  children: any;
+};
 
-  &:before {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: ${(props: any) => `url(${props.image})`};
-    opacity: 0.6;
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: -1;
-  }
-`;
-
-const FullScreenImageComponent = ({ image, children }: any) => (
-  <BackgroundImage image={image} data-testid="FullScreenImageComponent">
-    <Container>{children}</Container>
-  </BackgroundImage>
-);
+const FullScreenImageComponent: FC<FullScreenImageComponentProps> = (props) => {
+  const { children, image } = props;
+  return (
+    <div
+      style={{ backgroundImage: image }}
+      className={styles.FullScreenImageComponent}
+      data-testid="FullScreenImageComponent"
+    >
+      <Container>{children}</Container>
+    </div>
+  );
+};
 
 export default FullScreenImageComponent;

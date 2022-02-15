@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import BlogIntroComponent from "./BlogIntroComponent";
+import BlogSnippetComponent from "./BlogSnippetComponent";
 import { Blog } from "../../model/model";
 
-describe("<BlogIntro />", () => {
+describe("<BlogSnippet />", () => {
   let data: Blog = {
     title: "Blog title",
     text: "Text",
@@ -15,10 +15,9 @@ describe("<BlogIntro />", () => {
   };
 
   test("it should mount", () => {
-    render(<BlogIntroComponent data={data} />);
+    render(<BlogSnippetComponent data={data} />);
 
-    const blogIntroComponent = screen.getByTestId("BlogIntroComponent");
-
-    expect(blogIntroComponent).toBeInTheDocument();
+    const blogSnippet = screen.getByTestId("BlogSnippetComponent");
+    expect(blogSnippet).toBeInTheDocument();
   });
 });

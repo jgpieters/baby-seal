@@ -57,7 +57,7 @@ class BlogArticleComponent extends React.Component<
       return (
         <Container
           className={styles.BlogArticleComponent}
-          data-testid="BlogComponent"
+          data-testid="BlogArticleComponent"
         >
           <Row>
             <Col lg={{ span: 10, offset: 1 }}>
@@ -70,7 +70,7 @@ class BlogArticleComponent extends React.Component<
         </Container>
       );
     } else {
-      return <div>loading</div>;
+      return <div data-testid="BlogArticleComponentLoading">loading</div>;
     }
   }
 }

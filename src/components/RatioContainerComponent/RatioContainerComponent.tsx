@@ -1,30 +1,23 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./RatioContainerComponent.module.scss";
 
-const OuterDiv: any = styled.div`
-  background-color: red;
-  width: 100%;
-  padding-top: ${(props: any) => `${props.ratio}`};
-  position: relative;
-`;
-
-const InnerDiv: any = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-`;
-
-const RatioContainerComponent = ({ ratio, children }: Props) => (
-  <OuterDiv ratio={ratio} data-testid="RatioContainerComponent">
-    <InnerDiv>{children}</InnerDiv>
-  </OuterDiv>
-);
-
-export default RatioContainerComponent;
-
-interface Props {
+interface RatioContainerComponentProps {
   children: any;
   ratio: string;
 }
+
+const RatioContainerComponent: FC<RatioContainerComponentProps> = (props) => {
+  const { ratio, children } = props;
+
+  return (
+    <div
+      className={styles.RatioContainerComponent}
+      style={{ paddingTop: ratio }}
+      data-testid="RatioContainerComponent"
+    >
+      <div className={styles.innerDiv}>{children}</div>
+    </div>
+  );
+};
+
+export default RatioContainerComponent;

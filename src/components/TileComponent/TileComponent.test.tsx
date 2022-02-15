@@ -5,11 +5,10 @@ import TileComponent from "./TileComponent";
 
 describe("<Tile />", () => {
   test("it should mount", () => {
-    // render(<TileComponent data={{} as any} />);
+    render(<TileComponent data={{} as any} />);
 
-    // const tile = screen.getByTestId("Tile");
+    const tileComponent = screen.getByTestId("TileComponent");
 
-    // expect(true).toBeTruthy();
-    expect(true).toBeTruthy();
+    expect(tileComponent).toBeInTheDocument();
   });
 });

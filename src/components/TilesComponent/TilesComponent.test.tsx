@@ -4,12 +4,26 @@ import "@testing-library/jest-dom/extend-expect";
 import TilesComponent from "./TilesComponent";
 
 describe("<TilesComponent />", () => {
+  const data = {
+    intro: {
+      title: "Intro title",
+      text: "Intro text",
+    },
+    tiles: [
+      {
+        title: "title",
+        text: "text",
+        image: "image",
+        date: "date",
+      },
+    ],
+  };
+
   test("it should mount", () => {
-    // render(<TilesComponent data={{} as any} />);
+    render(<TilesComponent data={data} />);
 
-    // const tilesComponent = screen.getByTestId("TilesComponent");
+    const tilesComponent = screen.getByTestId("TilesComponent");
 
-    // expect(true).toBeTruthy();
-    expect(true).toBeTruthy();
+    expect(tilesComponent).toBeInTheDocument();
   });
 });

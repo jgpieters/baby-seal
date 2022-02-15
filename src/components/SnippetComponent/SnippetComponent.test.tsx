@@ -5,10 +5,10 @@ import SnippetComponent from "./SnippetComponent";
 
 describe("<Snippet />", () => {
   test("it should mount", () => {
-    // render(<SnippetComponent data={{} as any} />);
+    render(<SnippetComponent data={{} as any} />);
 
-    // const Snippet = screen.getByTestId("SnippetComponent");
+    const Snippet = screen.getByTestId("SnippetComponent");
 
-    expect(true).toBeTruthy();
+    expect(Snippet).toBeInTheDocument();
   });
 });

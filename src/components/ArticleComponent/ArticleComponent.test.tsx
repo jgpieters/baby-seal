@@ -4,12 +4,14 @@ import "@testing-library/jest-dom/extend-expect";
 import ArticleComponent from "./ArticleComponent";
 
 describe("<ArticleComponent />", () => {
+  const color = "#123456";
+  const children = <p>children</p>;
+
   test("it should mount", () => {
-    // render(<ArticleComponent color="#123"> </ArticleComponent>);
+    render(<ArticleComponent color={color}>{children}</ArticleComponent>);
 
-    // const articleComponent = screen.getByTestId("ArticleComponent");
+    const articleComponent = screen.getByTestId("ArticleComponent");
 
-    // expect(articleComponent).toBeInTheDocument();
-    expect(true).toBeTruthy();
+    expect(articleComponent).toBeInTheDocument();
   });
 });

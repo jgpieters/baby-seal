@@ -1,0 +1,31 @@
+.IntroComponent {
+  margin-top: 200px;
+
+  .box {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 51px -17px #111;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .paragraph {
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .signature {
+    white-space: pre-wrap;
+    font-family: "Comforter";
+    font-size: 48px;
+    margin-bottom: 26px;
+    color: #040685;
+  }
+}

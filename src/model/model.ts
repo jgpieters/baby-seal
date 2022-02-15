@@ -1,4 +1,5 @@
 export interface Blog {
+  _id?: number;
   title: string;
   text: string;
   date: Date;
@@ -13,3 +14,26 @@ export interface BlogParagraph {
   image?: string;
   quote?: string;
 }
+
+export type Link = {
+  title?: any;
+  text: string;
+  href: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
+};
+
+export type Footer = {
+  links: Link[];
+  about: {
+    title: string;
+    text: string;
+  };
+  contact: {
+    email: Link;
+    website: Link;
+    socialmedia: {
+      icon: string;
+      href: string;
+    }[];
+  };
+};

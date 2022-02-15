@@ -54,7 +54,11 @@ class BlogOverviewComponent extends React.Component<
       const childElements = data?.map((blog, index) => {
         return (
           <li className="image-element-class">
-            <BlogTileComponent data={blog} key={index}></BlogTileComponent>
+            <BlogTileComponent
+              data={blog}
+              key={index}
+              href={blog._id ? "/blog/" + blog._id : undefined}
+            ></BlogTileComponent>
           </li>
         );
       });

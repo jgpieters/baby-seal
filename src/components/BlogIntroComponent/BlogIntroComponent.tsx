@@ -10,9 +10,9 @@ const BlogIntro: FC<BlogIntroProps> = (props) => {
   const { title, text, image, date, author } = props.data;
 
   return (
-    <div className={styles.BlogIntroComponent} data-testid="BlogIntro">
+    <div className={styles.BlogIntroComponent} data-testid="BlogIntroComponent">
       {title ? <h1 className={styles.title}>{title}</h1> : null}
-      {text ? <p className={styles.text}>{text.substring(0, 200)}</p> : null}
+      {text ? <p className={styles.text}>{text}</p> : null}
       <img src={image} alt={""}></img>
     </div>
   );

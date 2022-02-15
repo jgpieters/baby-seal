@@ -1,77 +1,48 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import LinkComponent, { Link } from "../LinkComponent/LinkComponent";
+import LinkComponent from "../LinkComponent/LinkComponent";
+import styles from "./FooterComponent.module.scss";
+import { Footer } from "../../model/model";
 
-const BackgroundContainer: any = styled.div`
-  background-color: grey;
-  position: relative;
-  width: 100%;
-  padding: 80px 0;
-`;
-
-const LinkContainer: any = styled.div`
-  & > a {
-    color: white;
-  }
-`;
-
-const Title: any = styled.h2``;
-
-const Text: any = styled.p``;
-
-const FooterComponent = ({ data }: Props) => (
-  <BackgroundContainer>
-    <Container>
-      <Row data-testid="ArticleSnippetComponent">
-        <Col xs="12" md="6" lg="4">
-          <Title>Menu</Title>
-          {data.links?.map((link, index) => (
-            <LinkContainer key={index}>
-              <LinkComponent data={link}></LinkComponent>
-            </LinkContainer>
-          ))}
-        </Col>
-        <Col xs="12" md="6" lg="4">
-          <Title>{data.about?.title}</Title>
-          <Text>{data.about?.text}</Text>
-        </Col>
-        <Col xs="12" md="6" lg="4">
-          <Title>Contact</Title>
-          <LinkContainer>
-            <LinkComponent data={data.contact?.email}></LinkComponent>
-          </LinkContainer>
-          <LinkContainer>
-            <LinkComponent data={data.contact?.website}></LinkComponent>
-          </LinkContainer>
-          <Title>Follow us on</Title>
-        </Col>
-      </Row>
-    </Container>
-  </BackgroundContainer>
-);
-
-export default FooterComponent;
-
-interface Footer {
-  links: Link[];
-  about: {
-    title: string;
-    text: string;
-  };
-  contact: {
-    email: Link;
-    website: Link;
-    socialmedia: {
-      icon: string;
-      href: string;
-    }[];
-  };
-}
-
-interface Props {
+interface FooterComponentProps {
   data: Footer;
 }
+
+const FooterComponent: FC<FooterComponentProps> = (props) => {
+  const { links, about, contact } = props.data;
+  return (
+    <div className={styles.FooterComponent} data-testid="FooterComponent">
+      <Container>
+        <Row>
+          <Col xs="12" md="6" lg="4">
+            <h2>Menu</h2>
+            {links?.map((link, index) => (
+              <div className={styles.LinkComponent} key={index}>
+                <LinkComponent data={link}></LinkComponent>
+              </div>
+            ))}
+          </Col>
+          <Col xs="12" md="6" lg="4">
+            <h2>{about?.title}</h2>
+            <p>{about?.text}</p>
+          </Col>
+          <Col xs="12" md="6" lg="4">
+            <h2>Contact</h2>
+            <div className={styles.linkContainer}>
+              <LinkComponent data={contact?.email}></LinkComponent>
+            </div>
+            <div className={styles.linkContainer}>
+              <LinkComponent data={contact?.website}></LinkComponent>
+            </div>
+            <h2>Follow us on</h2>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+};
+
+export default FooterComponent;
