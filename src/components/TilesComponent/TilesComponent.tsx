@@ -32,7 +32,7 @@ const TilesComponent: FC<TilesComponentProps> = (props) => {
           {getTile(tiles, 0)}
         </Col>
         <Col xs="12" sm="6" md="3" style={{ marginTop: "-200px" }}>
-          <div className="introTile">
+          <div className={styles.introTile}>
             <h2>{intro.title}</h2>
             <p>{intro.text}</p>
           </div>

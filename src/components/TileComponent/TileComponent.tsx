@@ -10,7 +10,7 @@ const TileComponent: FC<TileComponentProps> = (props) => {
 
   return (
     <div className={styles.TileComponent} data-testid="TileComponent">
-      <img src={image} alt=""></img>
+      <img src={image} alt="" className={styles.image}></img>
       <div className={styles.textWrapper}>
         <h2>{title}</h2>
         <p>{text}</p>

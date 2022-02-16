@@ -28,7 +28,7 @@ const SnippetComponent: FC<SnippetComponentProps> = (props) => {
           style={view === View.IMAGE_LEFT ? { order: 0 } : { order: 1 }}
         >
           <h1>{title}</h1>
-          <h1>{text}</h1>
+          <p>{text}</p>
         </Col>
         <Col
           sm="12"

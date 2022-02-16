@@ -15,7 +15,7 @@ const IntroComponent: FC<IntroCompontentProps> = (props) => {
   const { title, text, signature, primaryButton, secondaryButton } = props.data;
 
   return (
-    <Container className={styles.IntroCompontent} data-testid="IntroComponent">
+    <Container className={styles.IntroComponent} data-testid="IntroComponent">
       <Row>
         <Col lg={{ span: 5, offset: 1 }}>
           <div className={styles.box}>

@@ -11,10 +11,13 @@ const FullScreenImageComponent: FC<FullScreenImageComponentProps> = (props) => {
   const { children, image } = props;
   return (
     <div
-      style={{ backgroundImage: image }}
       className={styles.FullScreenImageComponent}
       data-testid="FullScreenImageComponent"
     >
+      <div
+        className={styles.innerContainer}
+        style={{ backgroundImage: "url(" + image + ")" }}
+      ></div>
       <Container>{children}</Container>
     </div>
   );

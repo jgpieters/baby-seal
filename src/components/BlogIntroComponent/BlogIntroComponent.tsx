@@ -14,6 +14,8 @@ const BlogIntro: FC<BlogIntroProps> = (props) => {
       {title ? <h1 className={styles.title}>{title}</h1> : null}
       {text ? <p className={styles.text}>{text}</p> : null}
       <img src={image} alt={""}></img>
+      {date ? <span className={styles.date}>{date}</span> : null} |{" "}
+      {author ? <span className={styles.author}>{author}</span> : null}
     </div>
   );
 };
