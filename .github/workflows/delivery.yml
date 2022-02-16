@@ -31,6 +31,9 @@ jobs:
           rm -rf node_modules
           rm -rf .github
           rm -rf src
+          rm -rf public
+          rm -rf server
+          rm -v !("package-lock.json"|"package.json")
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
