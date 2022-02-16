@@ -30,9 +30,6 @@ jobs:
           npm run test --if-present
           rm -rf node_modules
           rm -rf .github
-          rm -rf src
-          rm -rf public
-          rm -rf server
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
