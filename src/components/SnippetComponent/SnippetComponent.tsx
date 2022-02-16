@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./SnippetComponent.module.scss";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -10,32 +10,37 @@ enum View {
   IMAGE_RIGHT = "image-right",
 }
 
-const Title: any = styled.h1``;
-const Paragraph: any = styled.p`
-  white-space: pre-wrap;
-`;
+type SnippetComponentProps = {
+  data: SnippetData;
+  view?: View;
+};
 
-const SnippetComponent = ({ data, view }: Props) => (
-  <Container>
-    <Row data-testid="SnippetComponent">
-      <Col
-        sm="12"
-        md={{ span: 4, offset: 2 }}
-        style={view === View.IMAGE_LEFT ? { order: 0 } : { order: 1 }}
-      >
-        <Title>{data.title}</Title>
-        <Paragraph>{data.text}</Paragraph>
-      </Col>
-      <Col
-        sm="12"
-        md={{ span: 4 }}
-        style={view === View.IMAGE_LEFT ? { order: 1 } : { order: 0 }}
-      >
-        <img src={data.image} alt="" />
-      </Col>
-    </Row>
-  </Container>
-);
+const SnippetComponent: FC<SnippetComponentProps> = (props) => {
+  const { data, view } = props;
+  const { title, text, image } = data;
+
+  return (
+    <Container className={styles.SnippetComponent}>
+      <Row data-testid="SnippetComponent">
+        <Col
+          sm="12"
+          md={{ span: 4, offset: 2 }}
+          style={view === View.IMAGE_LEFT ? { order: 0 } : { order: 1 }}
+        >
+          <h1>{title}</h1>
+          <p>{text}</p>
+        </Col>
+        <Col
+          sm="12"
+          md={{ span: 4 }}
+          style={view === View.IMAGE_LEFT ? { order: 1 } : { order: 0 }}
+        >
+          <img src={image} alt="" />
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
 export default SnippetComponent;
 
@@ -43,9 +48,4 @@ interface SnippetData {
   title: string;
   text: string;
   image: string;
-}
-
-interface Props {
-  data: SnippetData;
-  view?: View;
 }

@@ -1,25 +1,25 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./SectionComponent.module.scss";
 
-const BackgroundContainer: any = styled.div`
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 150px 0 150px 0;
-  background-color: ${(props: any) => props.color};
-`;
-
-const SectionComponent = ({ color, children }: Props) => (
-  <section>
-    <BackgroundContainer color={color} data-testid="SectionComponent">
-      {children}
-    </BackgroundContainer>
-  </section>
-);
-
-export default SectionComponent;
-
-interface Props {
+interface SectionComponentProps {
   children: any;
   color: string;
 }
+
+const SectionComponent: FC<SectionComponentProps> = (props) => {
+  const { color, children } = props;
+
+  return (
+    <section>
+      <div
+        className={styles.SectionComponent}
+        style={{ backgroundColor: color }}
+        data-testid="SectionComponent"
+      >
+        {children}
+      </div>
+    </section>
+  );
+};
+
+export default SectionComponent;

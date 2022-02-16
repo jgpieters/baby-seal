@@ -1,65 +1,26 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./TileComponent.module.scss";
 
-const TileContainer: any = styled.div`
-  background-color: white;
-  border: 1px #eee solid;
-  width: 100%;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  box-shadow: 0px 0px 25px -6px #000000;
-  cursor: pointer;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    box-shadow: 0px 5px 28px -3px #000000;
-    transform: translateY(-5px);
-    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &:active {
-    box-shadow: 0px 0px 24px -6px #000000;
-    transform: translateY(-2px);
-    transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-`;
-
-const TextWrapper: any = styled.div`
-  padding: 10px;
-`;
-
-const Image: any = styled.img`
-  width: 100%;
-  border-radius: 3px 3px 0 0;
-  border-bottom: 1px #eee solid;
-`;
-
-Image.defaultProps = (props: any) => ({
-  src: props.image,
-});
-
-const Title: any = styled.h2``;
-
-const Text: any = styled.p``;
-
-const Date: any = styled.p``;
-
-const TileComponent = ({ data }: Props) => (
-  <TileContainer data-testid="tile-component">
-    <Image src={data.image}></Image>
-    <TextWrapper>
-      <Title>{data.title}</Title>
-      <Text>{data.text}</Text>
-      <Date>{data.date}</Date>
-    </TextWrapper>
-  </TileContainer>
-);
-
-export default TileComponent;
-
-interface Props {
+interface TileComponentProps {
   data: Tile;
 }
 
+const TileComponent: FC<TileComponentProps> = (props) => {
+  const { image, title, text, date } = props.data;
+
+  return (
+    <div className={styles.TileComponent} data-testid="TileComponent">
+      <img src={image} alt="" className={styles.image}></img>
+      <div className={styles.textWrapper}>
+        <h2>{title}</h2>
+        <p>{text}</p>
+        <p>{date}</p>
+      </div>
+    </div>
+  );
+};
+
+export default TileComponent;
 export interface Tile {
   title: string;
   text: string;

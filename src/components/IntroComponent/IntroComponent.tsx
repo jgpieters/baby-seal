@@ -1,75 +1,49 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./IntroComponent.module.scss";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import { ButtonData } from "../ButtonComponent/ButtonComponent";
+
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import { Link } from "../../model/model";
 
-const StyledContainer = styled(Container)`
-  margin-top: 200px;
-`;
+interface IntroCompontentProps {
+  data: IntroData;
+}
 
-const Box = styled.div`
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 2px;
-  border: 1px solid #aaa;
-  box-shadow: 0px 0px 51px -17px #111;
-`;
+const IntroComponent: FC<IntroCompontentProps> = (props) => {
+  const { title, text, signature, primaryButton, secondaryButton } = props.data;
 
-const Title: any = styled.h1`
-  font-weight: 600;
-  font-size: 32px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-`;
-const Paragraph: any = styled.p`
-  font-weight: 300;
-  line-height: 30px;
-`;
-
-const Signature: any = styled.div`
-  white-space: pre-wrap;
-  font-family: "Comforter";
-  font-size: 48px;
-  margin-bottom: 26px;
-  color: #040685;
-`;
-const IntroCompontent = ({ data }: Props) => (
-  <StyledContainer data-testid="IntroCompontent">
-    <Row>
-      <Col lg={{ span: 5, offset: 1 }}>
-        <Box>
-          <Title>{data.title}</Title>
-          <Paragraph>{data.text}</Paragraph>
-          <Signature>{data.signature}</Signature>
-          <ButtonComponent
-            data={data.primaryButton}
-            type="primary"
-          ></ButtonComponent>
-          {data.secondaryButton ? (
+  return (
+    <Container className={styles.IntroComponent} data-testid="IntroComponent">
+      <Row>
+        <Col lg={{ span: 5, offset: 1 }}>
+          <div className={styles.box}>
+            <h1 className={styles.title}>{title}</h1>
+            <p className={styles.paragraph}>{text}</p>
+            <div className={styles.signature}>{signature}</div>
             <ButtonComponent
-              data={data.secondaryButton}
-              type="secondary"
+              data={primaryButton}
+              type="primary"
             ></ButtonComponent>
-          ) : null}
-        </Box>
-      </Col>
-    </Row>
-  </StyledContainer>
-);
+            {secondaryButton ? (
+              <ButtonComponent
+                data={secondaryButton}
+                type="secondary"
+              ></ButtonComponent>
+            ) : null}
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
-export default IntroCompontent;
-
+export default IntroComponent;
 interface IntroData {
   title: string;
   text: string;
   signature?: string;
-  primaryButton: ButtonData;
-  secondaryButton?: ButtonData;
-}
-
-interface Props {
-  data: IntroData;
+  primaryButton: Link;
+  secondaryButton?: Link;
 }

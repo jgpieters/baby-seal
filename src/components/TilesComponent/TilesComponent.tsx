@@ -1,19 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./TilesComponent.module.scss";
 import TileComponent, { Tile } from "../TileComponent/TileComponent";
-
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-
-const IntroTile: any = styled.div`
-  border: 1px solid #fff;
-  background-color: white;
-  border: 1px #ccc solid;
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 20px;
-`;
 
 const getTile: any = (tiles: Tile[], index: number) => {
   if (index + 1 <= tiles.length) {
@@ -22,20 +12,30 @@ const getTile: any = (tiles: Tile[], index: number) => {
   return null;
 };
 
-const TilesComponent = ({ data }: Props) => {
-  const tiles = data.tiles;
+interface TilesComponentProps {
+  data: {
+    intro: {
+      title: string;
+      text: string;
+    };
+    tiles: Tile[];
+  };
+}
+
+const TilesComponent: FC<TilesComponentProps> = (props) => {
+  const { intro, tiles } = props.data;
 
   return (
-    <Container>
+    <Container className={styles.TilesComponent} data-testid="TilesComponent">
       <Row>
         <Col xs="12" sm="6" md="3">
           {getTile(tiles, 0)}
         </Col>
         <Col xs="12" sm="6" md="3" style={{ marginTop: "-200px" }}>
-          <IntroTile>
-            <h2>{data.intro.title}</h2>
-            <p>{data.intro.text}</p>
-          </IntroTile>
+          <div className={styles.introTile}>
+            <h2>{intro.title}</h2>
+            <p>{intro.text}</p>
+          </div>
           {getTile(tiles, 1)}
         </Col>
         <Col xs="12" sm="6" md="3" style={{ marginTop: "-100px" }}>
@@ -51,13 +51,3 @@ const TilesComponent = ({ data }: Props) => {
 };
 
 export default TilesComponent;
-
-interface Props {
-  data: {
-    intro: {
-      title: string;
-      text: string;
-    };
-    tiles: Tile[];
-  };
-}

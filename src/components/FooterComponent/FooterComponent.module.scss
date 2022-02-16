@@ -1,0 +1,24 @@
+.FooterComponent {
+  background-color: grey;
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+
+  .menu .linkContainer {
+    margin-bottom: 15px;
+    & > a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .icon {
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 100%;
+  }
+}

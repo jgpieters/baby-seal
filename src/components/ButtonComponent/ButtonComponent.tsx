@@ -1,37 +1,37 @@
-import styled from "styled-components";
+import React, { FC } from "react";
 import classNames from "classnames";
+import { Link } from "../../model/model";
+import styles from "./ButtonComponents.module.scss";
 
-const Button: any = styled.a`
-  margin-right: 4px;
-`;
+type ButtonComponentProps = {
+  data: Link;
+  type: "primary" | "secondary";
+};
 
-const ButtonComponent = ({ data, type }: Props) => (
-  <Button
-    className={classNames({
-      btn: true,
-      "btn-primary": type === "primary",
-      "btn-outline-primary": type === "secondary",
-    })}
-    href={data.href}
-    target={data.target}
-    title={data.title}
-    role="button"
-    data-testid="ButtonComponent"
-  >
-    {data.text}
-  </Button>
-);
+const ButtonComponent: FC<ButtonComponentProps> = (props) => {
+  const { data, type } = props;
+  const { title, target, href, text } = data;
+
+  return (
+    <a
+      className={
+        styles.ButtonComponent +
+        " " +
+        classNames({
+          btn: true,
+          "btn-primary": type === "primary",
+          "btn-outline-primary": type === "secondary",
+        })
+      }
+      href={href}
+      target={target}
+      title={title}
+      role="button"
+      data-testid="ButtonComponent"
+    >
+      {text}
+    </a>
+  );
+};
 
 export default ButtonComponent;
-
-export interface ButtonData {
-  href: string;
-  target?: string;
-  text: string;
-  title?: any;
-}
-
-interface Props {
-  data: ButtonData;
-  type: "secondary" | "primary";
-}

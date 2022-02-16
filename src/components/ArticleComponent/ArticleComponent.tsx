@@ -1,25 +1,26 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styles from "./BlogIntroComponent.module.scss";
 
-const BackgroundContainer: any = styled.div`
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 150px 0 150px 0;
-  background-color: ${(props: any) => props.color};
-`;
-
-const ArticleComponent = ({ color, children }: Props) => (
-  <section>
-    <BackgroundContainer color={color} data-testid="ArticleComponent">
-      {children}
-    </BackgroundContainer>
-  </section>
-);
-
-export default ArticleComponent;
-
-interface Props {
+interface ArticleComponentProps {
   children: any;
   color: string;
 }
+
+const ArticleComponent: FC<ArticleComponentProps> = (props) => {
+  const { color, children } = props;
+
+  return (
+    <article className={styles.ArticleComponent}>
+      <div
+        className={styles.backgroundContainer}
+        style={{ backgroundColor: color }}
+        color={color}
+        data-testid="ArticleComponent"
+      >
+        {children}
+      </div>
+    </article>
+  );
+};
+
+export default ArticleComponent;
