@@ -40,11 +40,12 @@
   },
   "scripts": {
     "build": "npm run client:build && npm run server:build",
+    "test": "react-scripts test",
     "client:start": "react-scripts start",
     "client:build": "react-scripts build",
     "client:test": "react-scripts test",
     "client:eject": "react-scripts eject",
-    "server:start": "node server/src/index.js",
+    "server:start": "node build/server/index.js",
     "server:build": "webpack --config webpack.server.config.js",
     "docker:build": "docker build -t baby-seal -f Dockerfile .",
     "docker:run": "docker run --name baby-seal-container -it -p 80:8080 baby-seal"
