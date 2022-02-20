@@ -1,21 +1,20 @@
 .FullScreenImageComponent {
   position: relative;
   width: 100%;
-  height: 80vh;
-  overflow: auto;
+  height: 90vh;
 
   .innerContainer {
-    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0.6;
-    content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     z-index: -1;
+  }
+  .contentContainer {
+    display: inline-block;
   }
 }
