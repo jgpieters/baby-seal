@@ -18,7 +18,9 @@ const FullScreenImageComponent: FC<FullScreenImageComponentProps> = (props) => {
         className={styles.innerContainer}
         style={{ backgroundImage: "url(" + image + ")" }}
       ></div>
-      <Container>{children}</Container>
+      <div className={styles.contentContainer}>
+        <Container>{children}</Container>
+      </div>
     </div>
   );
 };
