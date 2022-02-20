@@ -3,7 +3,7 @@ import { Blog } from "../model/model";
 class BlogService {
   private overview;
   private blog;
-  private url = "http://localhost:8080/api/v1/blog";
+  private url = "/api/v1/blog";
 
   constructor() {
     this.overview = {
