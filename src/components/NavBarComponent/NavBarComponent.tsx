@@ -66,8 +66,12 @@ const NavBarComponent: FC<NavBarComponentProps> = (props) => {
             }
             aria-controls="basic-navbar-nav"
           >
-            {menu.map((menuItem) => (
-              <Link to={menuItem.link} onClick={() => setMenuOpen(false)}>
+            {menu.map((menuItem, index) => (
+              <Link
+                key={index}
+                to={menuItem.link}
+                onClick={() => setMenuOpen(false)}
+              >
                 {menuItem.text}
               </Link>
             ))}

@@ -32,8 +32,11 @@ const MasonryComponent: FC<MasonryComponentProps> = (props) => {
             updateOnEachImageLoad={false}
           >
             {children &&
-              children.map((tile: any) => (
-                <li className={styles.masonryElement + " masonry-element"}>
+              children.map((tile: any, index) => (
+                <li
+                  className={styles.masonryElement + " masonry-element"}
+                  key={index}
+                >
                   {tile}
                 </li>
               ))}

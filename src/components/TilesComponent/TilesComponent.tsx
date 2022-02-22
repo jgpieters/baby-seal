@@ -19,17 +19,6 @@ interface TilesComponentProps {
 const TilesComponent: FC<TilesComponentProps> = (props) => {
   const { intro, tiles } = props.data;
 
-  let index = 0;
-
-  const getTile: any = () => {
-    if (index + 1 <= tiles.length) {
-      const tile = tiles[index];
-      index = index + 1;
-      return <TileComponent data={tile}></TileComponent>;
-    }
-    return null;
-  };
-
   return (
     <React.Fragment>
       <Container className={styles.TilesComponent} data-testid="TilesComponent">
@@ -43,8 +32,8 @@ const TilesComponent: FC<TilesComponentProps> = (props) => {
         </Row>
       </Container>
       <MasonryComponent>
-        {tiles.map((tileData) => (
-          <TileComponent data={tileData}></TileComponent>
+        {tiles.map((tileData, index) => (
+          <TileComponent key={index} data={tileData}></TileComponent>
         ))}
       </MasonryComponent>
     </React.Fragment>
