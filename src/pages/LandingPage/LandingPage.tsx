@@ -60,7 +60,7 @@ class LandingPage extends React.Component {
                   title: "Tile 1",
                   text: "Phasellus sed dui elementum, molestie nisl sit amet, convallis eros",
                   image:
-                    "https://images.unsplash.com/photo-1642023998435-54aa37078fba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8cm5TS0RId3dZVWt8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                    "https://images.unsplash.com/photo-1645458320707-f8539c85490b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60",
                   date: "23 March 2022",
                 },
                 {

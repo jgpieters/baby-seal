@@ -23,6 +23,13 @@ const NavBarComponent: FC<NavBarComponentProps> = (props) => {
     });
   }, []);
 
+  const menu = [
+    { link: "/vlog", text: "Vlog" },
+    { link: "/blog", text: "Blog" },
+    { link: "/contact", text: "Contact" },
+    { link: "/donate", text: "Help ons" },
+  ];
+
   return (
     <div
       className={
@@ -39,7 +46,8 @@ const NavBarComponent: FC<NavBarComponentProps> = (props) => {
       <Container>
         <div className={styles.navBarContainer}>
           <div className={styles.homeOption}>
-            Joris&Tyrone<span className={styles.pink}>&Baby</span>
+            <Link to={"/"}>Joris&Tyrone</Link>
+            <span className={styles.pink}>&Baby</span>
             <span className={styles.blue}>Zeehond</span>
           </div>
           <div
@@ -58,11 +66,11 @@ const NavBarComponent: FC<NavBarComponentProps> = (props) => {
             }
             aria-controls="basic-navbar-nav"
           >
-            <Link to="vlog">Vlog</Link>
-            <Link to="blog">Blog</Link>
-            <Link to="contact">Contact</Link>
-            <Link to="donate">Help ons</Link>
-            <Link to="admin">Admin</Link>
+            {menu.map((menuItem) => (
+              <Link to={menuItem.link} onClick={() => setMenuOpen(false)}>
+                {menuItem.text}
+              </Link>
+            ))}
           </div>
         </div>
       </Container>
