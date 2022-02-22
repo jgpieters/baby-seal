@@ -1,0 +1,31 @@
+.MasonryComponent {
+  $margin-right-tile: 30px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .masonryElement {
+    width: 100%;
+    margin-right: $margin-right-tile;
+
+    @media (min-width: 567px) {
+      width: calc(50% - $margin-right-tile);
+    }
+
+    @media (min-width: 768px) {
+      width: calc(33% - $margin-right-tile);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(25% - $margin-right-tile);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(20% - $margin-right-tile);
+    }
+  }
+
+  //do Smth
+}

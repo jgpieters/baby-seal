@@ -14,7 +14,7 @@ const TileComponent: FC<TileComponentProps> = (props) => {
       <div className={styles.textWrapper}>
         <h2>{title}</h2>
         <p>{text}</p>
-        <p>{date}</p>
+        <div className={styles.date}>{date}</div>
       </div>
     </div>
   );
