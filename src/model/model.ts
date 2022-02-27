@@ -37,3 +37,11 @@ export type Footer = {
     }[];
   };
 };
+
+export type User = {
+  name: string;
+  email: string;
+  password: string;
+  passwordConfirm?: string;
+  role?: string;
+};

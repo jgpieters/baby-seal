@@ -1,20 +1,18 @@
 import React from "react";
 
-import styles from "./AdminPage.module.scss";
+import styles from "./BlogPage.module.scss";
 
-import BlogService from "../../services/BlogService";
+import BlogService from "../../../services/BlogService";
 
-class AdminPage extends React.Component {
+class BlogPage extends React.Component {
   private blogService;
 
   constructor(props: any) {
     super(props);
-
     this.blogService = new BlogService();
   }
 
   insertBlog() {
-    console.log("insertBlog");
     const blog = {
       title: "title",
       text: "Morbi aliquam, mauris in dignissim consectetur, purus mi ultrices libero, sit amet luctus nulla mi bibendum augue. Etiam a nunc nulla. Proin lacinia tincidunt enim non efficitur. Mauris imperdiet pretium massa vel tempus. Donec ultricies ligula id ex eleifend aliquet. Sed posuere ac felis ac aliquet. Nulla facilisi. Nunc vel dolor purus. In vitae ante at augue maximus volutpat. Vestibulum pellentesque consequat orci. Morbi eu fermentum nisl. Donec accumsan lectus ut enim pretium, a auctor elit volutpat. Aliquam nec augue eget magna egestas varius non quis quam. Nunc non turpis vel orci posuere facilisis vel sagittis magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam in felis accumsan, accumsan nunc quis, consequat dolor.",
@@ -58,13 +56,13 @@ class AdminPage extends React.Component {
     this.blogService.postBlog(blog);
   }
 
+  login(username: string, password: string): boolean {
+    return true;
+  }
+
   render() {
-    return (
-      <div className={styles.LandingPage} data-testid="LandingPage">
-        <div onClick={() => this.insertBlog()}>insert blog</div>
-      </div>
-    );
+    return <div className={styles.BlogPage} data-testid="BlogPage"></div>;
   }
 }
 
-export default AdminPage;
+export default BlogPage;

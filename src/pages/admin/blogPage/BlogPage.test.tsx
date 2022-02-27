@@ -1,15 +1,15 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import AdminPage from "./AdminPage";
+import BlogPage from "./BlogPage";
 
-describe("<AdminPage />", () => {
+describe("<BlogPage />", () => {
   test("it should mount", () => {
-    // render(<AdminPage />);
+    // render(<BlogPage />);
 
-    // const adminPage = screen.getByTestId('AdminPage');
+    // const blogPage = screen.getByTestId('BlogPage');
 
-    // expect(adminPage).toBeInTheDocument();
+    // expect(blogPage).toBeInTheDocument();
     expect(true).toBeTruthy();
   });
 });

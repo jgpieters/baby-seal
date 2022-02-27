@@ -1,13 +1,13 @@
 import React, { lazy, Suspense } from "react";
 
-const LazyAdminPage = lazy(() => import("./AdminPage"));
+const LazyAdminRoutes = lazy(() => import("./AdminRoutes"));
 
-const AdminPage = (
+const AdminRoutes = (
   props: JSX.IntrinsicAttributes & { children?: React.ReactNode }
 ) => (
   <Suspense fallback={null}>
-    <LazyAdminPage {...props} />
+    <LazyAdminRoutes {...props} />
   </Suspense>
 );
 
-export default AdminPage;
+export default AdminRoutes;
