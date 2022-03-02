@@ -1,67 +1,346 @@
 import React from "react";
-
 import styles from "./BlogPage.module.scss";
-
 import BlogService from "../../../services/BlogService";
+import { Blog } from "../../../model/model";
+import { Form, Container, Col, Row, Button } from "react-bootstrap";
+import moment from "moment";
 
-class BlogPage extends React.Component {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
+
+interface BlogPageProps {}
+
+interface BlogPageState {
+  blogList: Blog[];
+  blog?: Blog;
+}
+
+class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
   private blogService;
 
   constructor(props: any) {
     super(props);
+    this.state = {
+      blogList: [],
+      blog: undefined,
+    };
     this.blogService = new BlogService();
   }
 
-  insertBlog() {
-    const blog = {
-      title: "title",
-      text: "Morbi aliquam, mauris in dignissim consectetur, purus mi ultrices libero, sit amet luctus nulla mi bibendum augue. Etiam a nunc nulla. Proin lacinia tincidunt enim non efficitur. Mauris imperdiet pretium massa vel tempus. Donec ultricies ligula id ex eleifend aliquet. Sed posuere ac felis ac aliquet. Nulla facilisi. Nunc vel dolor purus. In vitae ante at augue maximus volutpat. Vestibulum pellentesque consequat orci. Morbi eu fermentum nisl. Donec accumsan lectus ut enim pretium, a auctor elit volutpat. Aliquam nec augue eget magna egestas varius non quis quam. Nunc non turpis vel orci posuere facilisis vel sagittis magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam in felis accumsan, accumsan nunc quis, consequat dolor.",
-      image:
-        "https://images.unsplash.com/photo-1640622843377-6b5af9417e70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
-      author: "Joris",
-      date: new Date(),
-      paragraphs: [
-        {
-          title: undefined,
-          text: "Vivamus vulputate magna ultrices gravida fermentum. Vivamus vel condimentum purus. Maecenas a urna et sem feugiat varius. Morbi vitae tellus hendrerit, finibus dui pellentesque, pulvinar dolor. Nullam dictum ante sed sem molestie, nec congue enim tristique. Mauris aliquet fringilla maximus. Nulla vitae mollis leo, ac interdum urna. Nunc venenatis gravida mauris, eget euismod nulla faucibus finibus. Curabitur mollis augue ac fermentum fermentum.",
-          image:
-            "https://images.unsplash.com/photo-1638913662180-afc4334cf422?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60",
-          quote:
-            "Maecenas a urna et sem feugiat varius. Morbi vitae tellus hendrerit, finibus dui pellentesque, pulvinar dolor.",
-        },
-        {
-          title: "In tempus purus tempor semper sagittis.",
-          text: "In tempus purus tempor semper sagittis. Etiam congue purus sed lectus faucibus rhoncus. Nullam ultrices lorem id tortor dignissim, a congue eros cursus. Nunc fringilla nunc sed ipsum viverra aliquet. Donec placerat dictum arcu, sit amet egestas purus. Sed vel fermentum libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus venenatis, leo in tincidunt venenatis, neque purus mattis libero, quis auctor diam mi id ipsum. Vivamus et sapien pellentesque, rhoncus nisi vitae, malesuada mauris. Mauris tempor suscipit ex non gravida. Pellentesque dictum nulla lacus. Mauris nulla dolor, porttitor et tortor vitae, tincidunt volutpat diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec enim eget erat maximus interdum finibus et ipsum. Proin id imperdiet odio.",
-          image: undefined,
-          quote: undefined,
-        },
-        {
-          title:
-            "Curabitur vestibulum urna neque, vitae interdum nibh commodo quis. ",
-          text: "Aliquam venenatis cursus risus, non pharetra metus auctor eu. Curabitur vestibulum urna neque, vitae interdum nibh commodo quis. Ut non gravida est. Phasellus sagittis efficitur nibh, vel auctor mi faucibus in. Integer volutpat nunc ut orci euismod tincidunt. Suspendisse volutpat magna in porttitor pharetra. Integer a risus pellentesque, bibendum mauris consequat, consectetur orci. Donec leo magna, ultrices in iaculis sed, fringilla eget odio. Fusce et elit erat. Curabitur tempus, tortor et dictum auctor, turpis eros aliquam velit, et elementum velit eros eget arcu. Aenean vitae lacus ligula.",
-          image: undefined,
-          quote:
-            "Curabitur vestibulum urna neque, vitae interdum nibh commodo quis. ",
-        },
-        {
-          title: "",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a hendrerit sapien. In ultricies sem eget porttitor euismod. Phasellus vulputate, nisi in congue feugiat, sapien velit suscipit augue, nec euismod dolor odio finibus mauris. Sed et libero nunc. Curabitur hendrerit, quam nec consectetur viverra, ligula ligula elementum ante, id ultricies odio nulla vel mi. Cras lacinia finibus neque, ut mattis arcu condimentum at. Mauris ac molestie arcu, a euismod tellus. Aliquam non urna risus. Nam vehicula aliquet mollis.",
-          image:
-            "https://images.unsplash.com/photo-1644411370675-e4e4572fc169?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
-          quote: undefined,
-        },
-      ],
-    };
-
-    this.blogService.postBlog(blog);
+  async componentDidMount() {
+    this.setState({ blogList: await this.blogService.listBlogs() });
   }
 
-  login(username: string, password: string): boolean {
-    return true;
+  async getBlog(id: string) {
+    this.setState({ blog: await this.blogService.getBlog(id) });
+  }
+
+  async saveBlog() {
+    const { blog } = this.state;
+    if (blog && blog._id) {
+      this.setState({ blog: await this.blogService.updateBlog(blog) });
+    } else if (blog) {
+      this.setState({ blog: await this.blogService.postBlog(blog) });
+    }
+  }
+
+  updateDateField(value: string) {
+    const date = moment(value, "yyyy-MM-DD").toDate();
+    if (this.state.blog) {
+      this.setState({
+        blog: {
+          ...this.state.blog,
+          date,
+        },
+      });
+    }
+  }
+
+  updateBlogField(fieldName: string, value: any) {
+    let { blog }: any = this.state;
+    blog[fieldName] = value;
+    this.setState({ blog });
+  }
+
+  updateParagraphField(fieldName: string, value: any, index: number) {
+    let blog = this.state.blog;
+
+    let paragraphs = blog?.paragraphs;
+    if (paragraphs && blog) {
+      let paragraph: any = paragraphs[index];
+      paragraph[fieldName] = value;
+      paragraphs[index] = paragraph;
+
+      blog = {
+        ...blog,
+        paragraphs,
+      };
+    }
+
+    this.setState({ blog: blog });
+  }
+
+  addParagraph() {
+    const blog = this.state.blog;
+    if (blog) {
+      let paragraphs = blog.paragraphs;
+      paragraphs && paragraphs.push({ text: "" });
+      this.setState({ blog: { ...blog, paragraphs } });
+    }
+  }
+
+  deleteParagraph(index: number) {
+    const blog = this.state.blog;
+    if (blog) {
+      let paragraphs = blog.paragraphs;
+      console.log(paragraphs);
+      paragraphs.splice(index, 1);
+      console.log(paragraphs);
+      this.setState({ blog: { ...blog, paragraphs } });
+    }
+  }
+
+  newBlog() {
+    this.setState({
+      blog: {
+        title: "",
+        text: "",
+        image: "",
+        date: new Date(),
+        author: "",
+        paragraphs: [],
+      },
+    });
+  }
+
+  async deleteBlog() {
+    const blog = this.state.blog;
+    blog && (await this.blogService.deleteBlog(blog));
+  }
+
+  toBase64(file: any): Promise<string> {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = (error) => reject(error);
+    });
+  }
+  async updateFile(file: any) {
+    const image: string = await this.toBase64(file);
+
+    if (this.state.blog) {
+      this.setState({ blog: { ...this.state.blog, image: image } });
+    }
+  }
+
+  async updateParagraphFile(file: any, index: number) {
+    const image: string = await this.toBase64(file);
+    this.updateParagraphField("image", image, index);
+  }
+
+  deleteParagraphImage(index: number) {
+    this.updateParagraphField("image", undefined, index);
   }
 
   render() {
-    return <div className={styles.BlogPage} data-testid="BlogPage"></div>;
+    const { blogList, blog } = this.state;
+    const date = blog && moment(blog.date).format("yyyy-MM-DD");
+
+    return (
+      <Container className={styles.BlogPage} data-testid="BlogPage">
+        <Row>
+          <Col lg="9">
+            {blog ? (
+              <div>
+                <Form.Control
+                  size="sm"
+                  type="text"
+                  className={styles.formInput}
+                  value={blog.title}
+                  onChange={(e) =>
+                    this.updateBlogField("title", (e.target as any).value)
+                  }
+                />
+                <Form.Control
+                  size="sm"
+                  type="text"
+                  as="textarea"
+                  rows={6}
+                  className={styles.formInput}
+                  value={blog.text}
+                  onChange={(e) =>
+                    this.updateBlogField("text", (e.target as any).value)
+                  }
+                />
+                <Form.Control
+                  size="sm"
+                  type="date"
+                  className={styles.formInput}
+                  value={date}
+                  onChange={(e) =>
+                    this.updateDateField((e.target as any).value)
+                  }
+                />
+                <Form.Control
+                  size="sm"
+                  type="text"
+                  className={styles.formInput}
+                  value={blog.author}
+                  onChange={(e) =>
+                    this.updateBlogField("author", (e.target as any).value)
+                  }
+                />
+
+                {blog.image ? (
+                  <div className={styles.imageWrapper}>
+                    <img src={blog.image} alt="" className={styles.image} />
+                    <FontAwesomeIcon
+                      icon={faClose}
+                      className={styles.icon}
+                      onClick={() => this.updateBlogField("image", undefined)}
+                    />
+                  </div>
+                ) : (
+                  <Form.Control
+                    type="file"
+                    size="sm"
+                    onChange={(e) =>
+                      this.updateFile((e.target as any).files[0])
+                    }
+                  />
+                )}
+                <hr />
+                {blog?.paragraphs.map((paragraphInstance, index) => (
+                  <div key={index}>
+                    <div className={styles.paragraphTitleWrapper}>
+                      <div>{"Paragraph " + (index + 1)}</div>
+                      <Button
+                        variant="danger"
+                        className={styles.button}
+                        onClick={() => this.deleteParagraph(index)}
+                      >
+                        Delete
+                      </Button>
+                    </div>
+                    <Form.Control
+                      placeholder="title"
+                      size="sm"
+                      type="text"
+                      className={styles.formInput}
+                      value={paragraphInstance.title}
+                      onChange={(e) =>
+                        this.updateParagraphField(
+                          "title",
+                          (e.target as any).value,
+                          index
+                        )
+                      }
+                    />
+
+                    <Form.Control
+                      placeholder="text"
+                      size="sm"
+                      type="text"
+                      as="textarea"
+                      rows={6}
+                      className={styles.formInput}
+                      value={paragraphInstance.text}
+                      onChange={(e) =>
+                        this.updateParagraphField(
+                          "text",
+                          (e.target as any).value,
+                          index
+                        )
+                      }
+                    />
+
+                    <Form.Control
+                      placeholder="quote"
+                      size="sm"
+                      type="text"
+                      className={styles.formInput}
+                      value={paragraphInstance.quote}
+                      onChange={(e) =>
+                        this.updateParagraphField(
+                          "quote",
+                          (e.target as any).value,
+                          index
+                        )
+                      }
+                    />
+                    {paragraphInstance.image ? (
+                      <img
+                        src={paragraphInstance.image}
+                        alt=""
+                        className={styles.image}
+                      />
+                    ) : (
+                      <Form.Control
+                        type="file"
+                        size="sm"
+                        onChange={(e) =>
+                          this.updateParagraphFile(
+                            (e.target as any).files[0],
+                            index
+                          )
+                        }
+                      />
+                    )}
+                    <hr />
+                  </div>
+                ))}
+                <div>
+                  <Button
+                    variant="secondary"
+                    className={styles.button}
+                    onClick={() => this.addParagraph()}
+                  >
+                    Add Paragraph
+                  </Button>
+                </div>
+                <div>
+                  <Button
+                    variant="primary"
+                    className={styles.button}
+                    onClick={() => this.saveBlog()}
+                  >
+                    Save Blog
+                  </Button>
+                  <Button
+                    variant="danger"
+                    className={styles.button}
+                    onClick={() => this.deleteBlog()}
+                  >
+                    Delete Blog
+                  </Button>
+                </div>
+              </div>
+            ) : null}
+          </Col>
+          <Col lg="3">
+            <Button color="primary" onClick={() => this.newBlog()}>
+              New blog
+            </Button>
+            {blogList.map((blogInstance, index) => (
+              <div
+                key={index}
+                className={styles.blogTile}
+                onClick={() =>
+                  blogInstance._id && this.getBlog(blogInstance._id)
+                }
+              >
+                <div className={styles.title}>{blogInstance.title}</div>
+                <div className={styles.text}>{blogInstance.text}</div>
+                <div className={styles.date}>
+                  {moment(blogInstance.date).format("DD-MM-yyyy")}
+                </div>
+              </div>
+            ))}
+          </Col>
+        </Row>
+      </Container>
+    );
   }
 }
 

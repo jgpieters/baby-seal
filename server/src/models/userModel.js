@@ -7,16 +7,12 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please fill your name"],
   },
-  email: {
+  username: {
     type: String,
-    required: [true, "Please fill your email"],
+    required: [true, "Please fill your desired username"],
     unique: true,
     lowercase: true,
-    validate: [validator.isEmail, " Please provide a valid email"],
-  },
-  address: {
-    type: String,
-    trim: true,
+    validate: [validator.isEmail, " Please provide a valid email as username"],
   },
   password: {
     type: String,
@@ -36,8 +32,8 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ["admin", "teacher", "student"],
-    default: "student",
+    enum: ["admin"],
+    default: "admin",
   },
   active: {
     type: Boolean,

@@ -1,7 +1,9 @@
 const AppError = require("../utils/appError");
 const APIFeatures = require("../utils/apiFeatures");
+const log = require("../utils/logger").logger;
 
 exports.deleteOne = (Model) => async (req, res, next) => {
+  log.info("baseController - deleteOne");
   try {
     const doc = await Model.findByIdAndDelete(req.params.id);
 
@@ -24,6 +26,7 @@ exports.deleteOne = (Model) => async (req, res, next) => {
 };
 
 exports.updateOne = (Model) => async (req, res, next) => {
+  log.info("baseController - updateOne");
   try {
     const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
@@ -51,6 +54,7 @@ exports.updateOne = (Model) => async (req, res, next) => {
 };
 
 exports.createOne = (Model) => async (req, res, next) => {
+  log.info("baseController - createOne");
   console.log("createOne");
   try {
     const doc = await Model.create(req.body);
@@ -68,6 +72,7 @@ exports.createOne = (Model) => async (req, res, next) => {
 };
 
 exports.getOne = (Model) => async (req, res, next) => {
+  log.info("baseController - getOne");
   try {
     const doc = await Model.findById(req.params.id);
 
@@ -92,17 +97,15 @@ exports.getOne = (Model) => async (req, res, next) => {
 };
 
 exports.getAll = (Model) => async (req, res, next) => {
+  log.info("baseController - getAll");
   try {
     const features = new APIFeatures(Model.find(), req.query).sort().paginate();
-
     const doc = await features.query;
 
     res.status(200).json({
       status: "success",
       results: doc.length,
-      data: {
-        data: doc,
-      },
+      data: doc,
     });
   } catch (error) {
     next(error);

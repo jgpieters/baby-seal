@@ -1,9 +1,9 @@
 export interface Blog {
-  _id?: number;
+  _id?: string;
   title: string;
   text: string;
-  date: Date;
   image: string;
+  date: Date;
   author: string;
   paragraphs: BlogParagraph[];
 }
@@ -39,9 +39,11 @@ export type Footer = {
 };
 
 export type User = {
-  name: string;
-  email: string;
+  name?: string;
+  username: string;
   password: string;
   passwordConfirm?: string;
   role?: string;
+  token?: string;
+  id?: string;
 };

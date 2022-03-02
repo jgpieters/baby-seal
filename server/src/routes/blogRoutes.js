@@ -6,7 +6,11 @@ const authController = require("../controllers/authController");
 
 router.route("/").get(blogController.list).post(blogController.create);
 
-router.route("/:id").get(blogController.get);
+router
+  .route("/:id")
+  .get(blogController.get)
+  .patch(blogController.update)
+  .delete(blogController.delete);
 
 router.route("/");
 

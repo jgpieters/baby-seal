@@ -1,40 +1,17 @@
-import { Blog, User } from "../model/model";
+import { User } from "../model/model";
+import { post } from "./ServiceUtils";
 
-class AuthService {
-  private url = "/api/v1/auth";
+export default class AuthService {
+  private url = "/auth";
 
-  async login(body: { username: string; password: string }): Promise<any> {
-    const response = await fetch(this.url, {
-      method: "POST",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "same-origin",
-      body: JSON.stringify({ body }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      redirect: "follow",
-      referrerPolicy: "no-referrer",
-    });
-
-    return response.json();
+  async login(body: User): Promise<User> {
+    const response = await post(this.url, body);
+    localStorage.setItem("token", response.token);
+    return response;
   }
 
-  async signup(body: User): Promise<Blog> {
-    const response = await fetch(this.url, {
-      method: "POST",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "same-origin",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      redirect: "follow",
-      referrerPolicy: "no-referrer",
-      body: JSON.stringify(body),
-    });
-    return response.json();
+  async signup(body: User): Promise<any> {
+    const response = await post(this.url + "/signup", body);
+    return response;
   }
 }
-
-export default AuthService;

@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./LoginPage.module.scss";
 
 import AuthService from "../../../services/AuthService";
@@ -21,7 +20,13 @@ class LoginPage extends React.Component<LoginPageProps, LoginPageState> {
 
   async login(username: string, password: string): Promise<any> {
     const loginResult = await this.authService.login({ username, password });
-    this.setState({ loggedIn: loginResult.token });
+
+    const loggedIn =
+      loginResult.token?.length != null && loginResult.token.length > 0;
+
+    if (loggedIn) {
+      window.history.pushState({}, "", "/admin/blog");
+    }
   }
 
   render() {

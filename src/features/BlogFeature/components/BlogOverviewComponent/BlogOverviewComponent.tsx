@@ -41,8 +41,7 @@ class BlogOverviewComponent extends React.Component<
   }
 
   async componentDidMount() {
-    const result = await this.blogService.listBlogs();
-    this.setState({ data: result.data.data, isLoaded: true });
+    this.setState({ data: await this.blogService.listBlogs(), isLoaded: true });
   }
 
   render() {

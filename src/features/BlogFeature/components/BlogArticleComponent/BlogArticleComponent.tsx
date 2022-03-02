@@ -1,7 +1,5 @@
 import React from "react";
-
 import styles from "./BlogArticleComponent.module.scss";
-
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -35,7 +33,7 @@ class BlogArticleComponent extends React.Component<
   }
 
   async componentDidMount() {
-    const result = await this.blogService.getBlog();
+    const result = await this.blogService.getBlog("123a");
     this.setState({ data: result, isLoaded: true });
   }
 

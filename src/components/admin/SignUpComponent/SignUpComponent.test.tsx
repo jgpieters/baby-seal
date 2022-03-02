@@ -1,14 +1,14 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import SignUpComponent from "./SignUpComponent";
+import SignupComponent from "./SignupComponent";
 
-describe("<SignUpComponent />", () => {
+describe("<SignupComponent />", () => {
   test("it should mount", () => {
-    render(<SignUpComponent onSubmit={() => {}} />);
+    render(<SignupComponent onSubmit={() => {}} />);
 
-    const signUpComponent = screen.getByTestId("SignUpComponent");
+    const signupComponent = screen.getByTestId("SignupComponent");
 
-    expect(signUpComponent).toBeInTheDocument();
+    expect(signupComponent).toBeInTheDocument();
   });
 });
