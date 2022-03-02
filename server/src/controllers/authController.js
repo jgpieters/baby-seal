@@ -17,36 +17,31 @@ const createToken = (id) => {
 
 exports.login = async (req, res, next) => {
   try {
-    const { email, password } = req.body;
+    const { username, password } = req.body;
 
-    // 1) check if email and password exist
-    if (!email || !password) {
+    if (!username || !password) {
       return next(
-        new AppError(404, "fail", "Please provide email or password"),
+        new AppError(404, "fail", "Please provide Username or Password"),
         req,
         res,
         next
       );
     }
 
-    // 2) check if user exist and password is correct
     const user = await User.findOne({
-      email,
+      username,
     }).select("+password");
 
     if (!user || !(await user.correctPassword(password, user.password))) {
       return next(
-        new AppError(401, "fail", "Email or Password is wrong"),
+        new AppError(401, "fail", "Username or Password is wrong"),
         req,
         res,
         next
       );
     }
 
-    // 3) All correct, send jwt to client
     const token = createToken(user.id);
-
-    // Remove the password from the output
     user.password = undefined;
 
     res.status(200).json({
@@ -62,13 +57,13 @@ exports.login = async (req, res, next) => {
 };
 
 exports.signup = async (req, res, next) => {
+  console.log("signup");
   try {
     const user = await User.create({
       name: req.body.name,
-      email: req.body.email,
+      username: req.body.username,
       password: req.body.password,
       passwordConfirm: req.body.passwordConfirm,
-      role: req.body.role,
     });
 
     const token = createToken(user.id);
