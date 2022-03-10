@@ -16,6 +16,7 @@ class BlogService {
 
   async postBlog(blog: Blog): Promise<Blog> {
     const result = await post(this.url, blog);
+    console.log(result);
     return result.data.doc;
   }
 

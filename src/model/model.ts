@@ -8,6 +8,24 @@ export interface Blog {
   paragraphs: BlogParagraph[];
 }
 
+export interface Vlog {
+  _id?: string;
+  title: string;
+  text: string;
+  url: string;
+  date: Date;
+}
+
+export interface Section {
+  _id?: string;
+  title: string;
+  text: string;
+  images: string[];
+  url: string;
+  date: Date;
+  type: string;
+}
+
 export interface BlogParagraph {
   title?: string;
   text: string;
@@ -47,3 +65,9 @@ export type User = {
   token?: string;
   id?: string;
 };
+
+export enum SectionTextType {
+  INTRO,
+  INTRO_TYRONE,
+  INTRO_JORIS,
+}

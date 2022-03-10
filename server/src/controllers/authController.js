@@ -2,6 +2,7 @@ const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
 const AppError = require("../utils/appError");
+const log = require("../utils/logger").logger;
 
 const createToken = (id) => {
   return jwt.sign(
@@ -83,9 +84,8 @@ exports.signup = async (req, res, next) => {
 };
 
 exports.protect = async (req, res, next) => {
-  next();
+  log.info("AuthController - protect");
   try {
-    // 1) check if the token is there
     let token;
     if (
       req.headers.authorization &&
@@ -93,6 +93,7 @@ exports.protect = async (req, res, next) => {
     ) {
       token = req.headers.authorization.split(" ")[1];
     }
+    log.info("AuthController - protect - token: " + token);
     if (!token) {
       return next(
         new AppError(
@@ -106,10 +107,8 @@ exports.protect = async (req, res, next) => {
       );
     }
 
-    // 2) Verify token
     const decode = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
-
-    // 3) check if the user is exist (not deleted)
+    log.info("AuthController - protect - decode: " + decode);
     const user = await User.findById(decode.id);
     if (!user) {
       return next(
@@ -119,8 +118,9 @@ exports.protect = async (req, res, next) => {
         next
       );
     }
-
+    log.info("AuthController - protect - user: " + user);
     req.user = user;
+    log.info("AuthController - protect - next");
     next();
   } catch (err) {
     next(err);

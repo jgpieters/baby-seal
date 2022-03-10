@@ -14,4 +14,15 @@ export default class AuthService {
     const response = await post(this.url + "/signup", body);
     return response;
   }
+
+  isLoggedIn(): boolean {
+    const token = localStorage.getItem("token");
+
+    console.log("token", token);
+    return token && token.length > 0 ? true : false;
+  }
+
+  logout(): void {
+    localStorage.removeItem("token");
+  }
 }

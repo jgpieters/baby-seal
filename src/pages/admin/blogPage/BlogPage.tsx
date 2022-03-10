@@ -28,6 +28,10 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
   }
 
   async componentDidMount() {
+    this.listBlogs();
+  }
+
+  async listBlogs() {
     this.setState({ blogList: await this.blogService.listBlogs() });
   }
 
@@ -35,13 +39,20 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
     this.setState({ blog: await this.blogService.getBlog(id) });
   }
 
-  async saveBlog() {
-    const { blog } = this.state;
+  async processSaveBlog() {
+    await this.saveBlog(this.state.blog)?.then((blog) => {
+      this.setState({ blog });
+      this.listBlogs();
+    });
+  }
+
+  async saveBlog(blog?: Blog): Promise<Blog> {
     if (blog && blog._id) {
-      this.setState({ blog: await this.blogService.updateBlog(blog) });
+      return await this.blogService.updateBlog(blog);
     } else if (blog) {
-      this.setState({ blog: await this.blogService.postBlog(blog) });
+      return this.blogService.postBlog(blog);
     }
+    return {} as any;
   }
 
   updateDateField(value: string) {
@@ -113,9 +124,12 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
     });
   }
 
-  async deleteBlog() {
+  deleteBlog() {
     const blog = this.state.blog;
-    blog && (await this.blogService.deleteBlog(blog));
+    blog &&
+      this.blogService.deleteBlog(blog).then(() => {
+        this.listBlogs();
+      });
   }
 
   toBase64(file: any): Promise<string> {
@@ -126,6 +140,7 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
       reader.onerror = (error) => reject(error);
     });
   }
+
   async updateFile(file: any) {
     const image: string = await this.toBase64(file);
 
@@ -156,6 +171,7 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
                 <Form.Control
                   size="sm"
                   type="text"
+                  placeholder="title"
                   className={styles.formInput}
                   value={blog.title}
                   onChange={(e) =>
@@ -165,6 +181,7 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
                 <Form.Control
                   size="sm"
                   type="text"
+                  placeholder="text"
                   as="textarea"
                   rows={6}
                   className={styles.formInput}
@@ -185,6 +202,7 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
                 <Form.Control
                   size="sm"
                   type="text"
+                  placeholder="author"
                   className={styles.formInput}
                   value={blog.author}
                   onChange={(e) =>
@@ -303,7 +321,7 @@ class BlogPage extends React.Component<BlogPageProps, BlogPageState> {
                   <Button
                     variant="primary"
                     className={styles.button}
-                    onClick={() => this.saveBlog()}
+                    onClick={() => this.processSaveBlog()}
                   >
                     Save Blog
                   </Button>

@@ -4,8 +4,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainRoutes from "./routes/mainRoutes/MainRoutes";
-import AdminRoutes from "./routes/adminRoutes/AdminRoutes";
+import MainRoutes from "./routes/MainRoutes/MainRoutes";
+import AdminRoutes from "./routes/AdminRoutes/AdminRoutes";
 
 const App = () => {
   return (

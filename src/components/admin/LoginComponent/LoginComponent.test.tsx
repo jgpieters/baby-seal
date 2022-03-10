@@ -5,7 +5,7 @@ import LoginComponent from "./LoginComponent";
 
 describe("<LoginComponent />", () => {
   test("it should mount", () => {
-    render(<LoginComponent onSubmit={() => {}} />);
+    render(<LoginComponent loginRoute={""} />);
 
     const loginComponent = screen.getByTestId("LoginComponent");
 

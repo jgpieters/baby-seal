@@ -4,16 +4,11 @@ const router = express.Router();
 const blogController = require("../controllers/blogController");
 const authController = require("../controllers/authController");
 
-router.route("/").get(blogController.list).post(blogController.create);
-
-router
-  .route("/:id")
-  .get(blogController.get)
-  .patch(blogController.update)
-  .delete(blogController.delete);
-
-router.route("/");
-
+router.route("/:id").get(blogController.get);
+router.route("/").get(blogController.list);
 router.use(authController.protect);
+
+router.route("/:id").delete(blogController.delete).patch(blogController.update);
+router.route("/").post(blogController.create);
 
 module.exports = router;

@@ -9,6 +9,8 @@ const path = require("path");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const blogRoutes = require("./routes/blogRoutes");
+const vlogRoutes = require("./routes/vlogRoutes");
+const sectionRoutes = require("./routes/sectionRoutes");
 const globalErrHandler = require("./controllers/errorController");
 const bodyParser = require("body-parser");
 const AppError = require("./utils/appError");
@@ -55,7 +57,9 @@ app.use(hpp());
 
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/blog", blogRoutes);
-app.use("/api/v1/blog", userRoutes);
+app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/vlog", vlogRoutes);
+app.use("/api/v1/section", sectionRoutes);
 
 let clientPath = path.join(__dirname, "..", "..", "build");
 

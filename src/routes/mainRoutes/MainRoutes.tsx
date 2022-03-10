@@ -1,7 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import styles from "./MainRoutes.module.scss";
-
 import NavBarComponent from "../../components/NavBarComponent/NavBarComponent";
 import FooterComponent from "../../components/FooterComponent/FooterComponent";
 import LandingPage from "../../pages/LandingPage/LandingPage";
@@ -10,6 +8,7 @@ import DonatePage from "../../pages/DonatePage/DonatePage";
 import ContactPage from "../../pages/ContactPage/ContactPage";
 import BlogOverviewComponent from "../../features/BlogFeature/components/BlogOverviewComponent/BlogOverviewComponent";
 import BlogArticleComponent from "../../features/BlogFeature/components/BlogArticleComponent/BlogArticleComponent";
+import LoginPage from "../../pages/admin/loginPage/LoginPage";
 
 interface MainRoutesProps {}
 
@@ -20,7 +19,7 @@ interface MainRoutesState {
 class MainRoutes extends React.Component<MainRoutesProps, MainRoutesState> {
   render() {
     return (
-      <div className={styles.MainRoutes} data-testid="MainRoutes">
+      <div data-testid="MainRoutes">
         <NavBarComponent></NavBarComponent>
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -30,6 +29,7 @@ class MainRoutes extends React.Component<MainRoutesProps, MainRoutesState> {
           <Route path="/vlog" element={<VlogPage />} />
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
         <FooterComponent
           data={{

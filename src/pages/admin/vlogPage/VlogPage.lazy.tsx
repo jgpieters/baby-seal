@@ -1,13 +1,13 @@
 import React, { lazy, Suspense } from "react";
 
-const LazyAdminRoutes = lazy(() => import("./AdminRoutes"));
+const LazyBlogPage = lazy(() => import("./VlogPage"));
 
-const AdminRoutes = (
+const BlogPage = (
   props: JSX.IntrinsicAttributes & { children?: React.ReactNode }
 ) => (
   <Suspense fallback={null}>
-    <LazyAdminRoutes {...props} />
+    <LazyBlogPage {...props} />
   </Suspense>
 );
 
-export default AdminRoutes;
+export default BlogPage;

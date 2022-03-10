@@ -1,225 +1,239 @@
 {"level":"info","message":"Application is running on port 8080","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njc3MDA0NywiZXhwIjoxNjQ2NzcxODQ3fQ.jJqZpJPJ5Vqw2xwsNtdO0rxzY__ZOs3-k5bSM-DiCDA","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njc3MDA0NywiZXhwIjoxNjQ2NzcxODQ3fQ.jJqZpJPJ5Vqw2xwsNtdO0rxzY__ZOs3-k5bSM-DiCDA","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njc3MDA0NywiZXhwIjoxNjQ2NzcxODQ3fQ.jJqZpJPJ5Vqw2xwsNtdO0rxzY__ZOs3-k5bSM-DiCDA","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njc3MDA0NywiZXhwIjoxNjQ2NzcxODQ3fQ.jJqZpJPJ5Vqw2xwsNtdO0rxzY__ZOs3-k5bSM-DiCDA","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0NjkzODU0OSwiZXhwIjoxNjQ2OTQwMzQ5fQ.lFCErfRyMKiB3b1nZev4HEafTchdNOUaBKIG7y78Fps","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - createOne","service":"user-service"}
+{"level":"info","message":"Application is running on port 8080","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - createOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - createOne","service":"user-service"}
 {"level":"info","message":"Application is running on port 8080","service":"user-service"}
 {"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"Application is running on port 8080","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - deleteOne","service":"user-service"}
-{"level":"info","message":"baseController - deleteOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - deleteOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - deleteOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - deleteOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - deleteOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
 {"level":"info","message":"baseController - createOne","service":"user-service"}
 {"level":"info","message":"baseController - getAll","service":"user-service"}
 {"level":"info","message":"sort","service":"user-service"}
 {"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - createOne","service":"user-service"}
 {"level":"info","message":"baseController - getAll","service":"user-service"}
 {"level":"info","message":"sort","service":"user-service"}
 {"level":"info","message":"paginate","service":"user-service"}
@@ -227,19 +241,9 @@
 {"level":"info","message":"baseController - getAll","service":"user-service"}
 {"level":"info","message":"sort","service":"user-service"}
 {"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
 {"level":"info","message":"baseController - getOne","service":"user-service"}
 {"level":"info","message":"baseController - getAll","service":"user-service"}
 {"level":"info","message":"sort","service":"user-service"}
@@ -247,89 +251,217 @@
 {"level":"info","message":"baseController - getAll","service":"user-service"}
 {"level":"info","message":"sort","service":"user-service"}
 {"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - updateOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getAll","service":"user-service"}
-{"level":"info","message":"sort","service":"user-service"}
-{"level":"info","message":"paginate","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
-{"level":"info","message":"baseController - getOne","service":"user-service"}
 {"level":"info","message":"baseController - getOne","service":"user-service"}
 {"level":"info","message":"Application is running on port 8080","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - updateOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - updateOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - updateOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - updateOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - updateOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - updateOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"AuthController - protect","service":"user-service"}
+{"level":"info","message":"AuthController - protect - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJhOTlkNTUxZTRlMzRiZmVjNWYwYiIsImlhdCI6MTY0Njk0MjU3NywiZXhwIjoxNjQ2OTQ0Mzc3fQ.KUQ3dv8r9_-fdn5dfRPKWm5DQro98yvZPD6AqaPb0Kw","service":"user-service"}
+{"level":"info","message":"AuthController - protect - decode: [object Object]","service":"user-service"}
+{"level":"info","message":"AuthController - protect - user: {\n  _id: new ObjectId(\"621ba99d551e4e34bfec5f0b\"),\n  name: 'Joris Pieters',\n  username: 'jgpieters@hotmail.com',\n  role: 'admin',\n  __v: 0\n}","service":"user-service"}
+{"level":"info","message":"AuthController - protect - next","service":"user-service"}
+{"level":"info","message":"baseController - updateOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getOne","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}
+{"level":"info","message":"baseController - getAll","service":"user-service"}
+{"level":"info","message":"sort","service":"user-service"}
+{"level":"info","message":"paginate","service":"user-service"}

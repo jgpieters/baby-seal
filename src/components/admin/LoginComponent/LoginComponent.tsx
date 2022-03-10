@@ -1,14 +1,30 @@
 import React, { FC, useState } from "react";
 import styles from "./LoginComponent.module.scss";
 import { Form, Container, Col, Row, Button } from "react-bootstrap";
+import AuthService from "../../../services/AuthService";
+import { useNavigate } from "react-router-dom";
 
 interface LoginComponentProps {
-  onSubmit: (username: string, password: string) => void;
+  loginRoute: string;
 }
 
 const LoginComponent: FC<LoginComponentProps> = (props) => {
-  const [login, setLogin] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const authService = new AuthService();
+  const navigation = useNavigate();
+
+  const login = async (username: string, password: string) => {
+    const loginResult = await authService.login({ username, password });
+
+    const loggedIn =
+      loginResult.token?.length != null && loginResult.token.length > 0;
+
+    if (loggedIn) {
+      navigation(props.loginRoute);
+    }
+  };
 
   return (
     <Container className={styles.LoginComponent} data-testid="LoginComponent">
@@ -23,10 +39,10 @@ const LoginComponent: FC<LoginComponentProps> = (props) => {
           <Form.Control
             size="sm"
             type="text"
-            value={login}
+            value={username}
             placeholder="Username"
             className={styles.formInput}
-            onChange={(e) => setLogin(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
 
           <Form.Control
@@ -37,10 +53,7 @@ const LoginComponent: FC<LoginComponentProps> = (props) => {
             className={styles.formInput}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button
-            color="primary"
-            onClick={() => props.onSubmit(login, password)}
-          >
+          <Button color="primary" onClick={() => login(username, password)}>
             Log in
           </Button>
         </Col>
